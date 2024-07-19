@@ -1,0 +1,1188 @@
+fileFormatVersion: 2
+guid: 03116f59121afe24c8a78c118ab0d42c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -146684941313191259
+    second: brick_placeholder_bg_0
+  - first:
+      213: 8289958027846055750
+    second: brick_placeholder_bg_1
+  - first:
+      213: -4495612053706138844
+    second: brick_placeholder_bg_2
+  - first:
+      213: 667868321196998378
+    second: brick_placeholder_bg_3
+  - first:
+      213: -2001348668821825115
+    second: brick_placeholder_bg_4
+  - first:
+      213: 4012907870672291599
+    second: brick_placeholder_bg_5
+  - first:
+      213: 4722398075475020918
+    second: brick_placeholder_bg_6
+  - first:
+      213: -3281654451100777215
+    second: brick_placeholder_bg_7
+  - first:
+      213: 2409020188116527038
+    second: brick_placeholder_bg_8
+  - first:
+      213: 1072967619086168132
+    second: brick_placeholder_bg_9
+  - first:
+      213: 1966395614975173107
+    second: brick_placeholder_bg_10
+  - first:
+      213: 1000442807053288568
+    second: brick_placeholder_bg_11
+  - first:
+      213: -4996246154554569599
+    second: brick_placeholder_bg_12
+  - first:
+      213: -7705990522316191285
+    second: brick_placeholder_bg_13
+  - first:
+      213: -4555875524317828161
+    second: brick_placeholder_bg_14
+  - first:
+      213: 6378013816689742649
+    second: brick_placeholder_bg_15
+  - first:
+      213: -6667858704485947283
+    second: brick_placeholder_bg_16
+  - first:
+      213: 5287685367542903454
+    second: brick_placeholder_bg_17
+  - first:
+      213: -1137735546252589779
+    second: brick_placeholder_bg_18
+  - first:
+      213: -5602379031010712334
+    second: brick_placeholder_bg_19
+  - first:
+      213: 349385223729925444
+    second: brick_placeholder_bg_20
+  - first:
+      213: 8488268748735599606
+    second: brick_placeholder_bg_21
+  - first:
+      213: 5206247133273162559
+    second: brick_placeholder_bg_22
+  - first:
+      213: -4454753418911647678
+    second: brick_placeholder_bg_23
+  - first:
+      213: 185699808066608194
+    second: brick_placeholder_bg_24
+  - first:
+      213: -4162428826757736239
+    second: brick_placeholder_bg_25
+  - first:
+      213: -8444613908993049746
+    second: brick_placeholder_bg_26
+  - first:
+      213: -4753253968603788284
+    second: brick_placeholder_bg_27
+  - first:
+      213: -8787773473960948888
+    second: brick_placeholder_bg_28
+  - first:
+      213: -3288120219349792234
+    second: brick_placeholder_bg_29
+  - first:
+      213: -8518532024227344655
+    second: brick_placeholder_bg_30
+  - first:
+      213: -1350324763414966188
+    second: brick_placeholder_bg_31
+  - first:
+      213: -1467743669540569202
+    second: brick_placeholder_bg_32
+  - first:
+      213: -1499486684034997918
+    second: brick_placeholder_bg_33
+  - first:
+      213: -3701965460519819982
+    second: brick_placeholder_bg_34
+  - first:
+      213: -8229246726056837192
+    second: brick_placeholder_bg_35
+  - first:
+      213: 8572669519331050004
+    second: brick_placeholder_bg_36
+  - first:
+      213: -7640436466228702542
+    second: brick_placeholder_bg_37
+  - first:
+      213: 8522038025685342317
+    second: brick_placeholder_bg_38
+  - first:
+      213: -1594653288747435559
+    second: brick_placeholder_bg_39
+  - first:
+      213: 6737602365960086359
+    second: brick_placeholder_bg_40
+  - first:
+      213: -2150179587340358212
+    second: brick_placeholder_bg_41
+  - first:
+      213: 1166952494827558188
+    second: brick_placeholder_bg_42
+  - first:
+      213: -1113199281978998695
+    second: brick_placeholder_bg_43
+  - first:
+      213: -6193645711077933134
+    second: brick_placeholder_bg_44
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: brick_placeholder_bg_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 141
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2d023b2ded6fdf0800000000000000
+      internalID: -146684941313191259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 141
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64779ac77e8db0370800000000000000
+      internalID: 8289958027846055750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 141
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b91eae7a06c91c0800000000000000
+      internalID: -4495612053706138844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 141
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeefea913beb44900800000000000000
+      internalID: 667868321196998378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 141
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a99c234df7c934e0800000000000000
+      internalID: -2001348668821825115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 141
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f078ac37276b0b730800000000000000
+      internalID: 4012907870672291599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 141
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c4da08704598140800000000000000
+      internalID: 4722398075475020918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 141
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1050f86e9a83572d0800000000000000
+      internalID: -3281654451100777215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 141
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb72e69f81f8e6120800000000000000
+      internalID: 2409020188116527038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 109
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440b02f5d52f3ee00800000000000000
+      internalID: 1072967619086168132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 109
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f12b76b46a0a4b10800000000000000
+      internalID: 1966395614975173107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 109
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8748184be6942ed00800000000000000
+      internalID: 1000442807053288568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_12
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 109
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c0d5bf794c9aab0800000000000000
+      internalID: -4996246154554569599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 109
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc901d2b272de0590800000000000000
+      internalID: -7705990522316191285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_14
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 109
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbba324495746c0c0800000000000000
+      internalID: -4555875524317828161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_15
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 109
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933535c26c1438850800000000000000
+      internalID: 6378013816689742649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_16
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 109
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d686e9a06d10773a0800000000000000
+      internalID: -6667858704485947283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_17
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 109
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92fc6093d1a16940800000000000000
+      internalID: 5287685367542903454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 77
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2587457c83f530f0800000000000000
+      internalID: -1137735546252589779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 77
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f4628734f95042b0800000000000000
+      internalID: -5602379031010712334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_20
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 77
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d4136820449d400800000000000000
+      internalID: 349385223729925444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_21
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 77
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f35f6644736cc570800000000000000
+      internalID: 8488268748735599606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 77
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3384af0f2e404840800000000000000
+      internalID: 5206247133273162559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_23
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 77
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24870d72e598d22c0800000000000000
+      internalID: -4454753418911647678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_24
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 77
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24c1ba6ddfcb39200800000000000000
+      internalID: 185699808066608194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_25
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 77
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d8524a19051c36c0800000000000000
+      internalID: -4162428826757736239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_26
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 77
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b75292464beca80800000000000000
+      internalID: -8444613908993049746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 45
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40cc72a03bc090eb0800000000000000
+      internalID: -4753253968603788284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_28
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 45
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b05f5c59e8b0680800000000000000
+      internalID: -8787773473960948888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_29
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 45
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a40eae4104e52d0800000000000000
+      internalID: -3288120219349792234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 45
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fec320d14818c980800000000000000
+      internalID: -8518532024227344655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_31
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 45
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450dc3138cea24de0800000000000000
+      internalID: -1350324763414966188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_32
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 45
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8fb4b3b8e681abe0800000000000000
+      internalID: -1467743669540569202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_33
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 45
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2616aa43ec0c03be0800000000000000
+      internalID: -1499486684034997918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_34
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 45
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23563fa070aff9cc0800000000000000
+      internalID: -3701965460519819982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_35
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 45
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bff55cf3b7dbcd80800000000000000
+      internalID: -8229246726056837192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412cb84028d38f670800000000000000
+      internalID: 8572669519331050004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_37
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 13
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b25f75c387b7f590800000000000000
+      internalID: -7640436466228702542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_38
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 13
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d689853ce6c544670800000000000000
+      internalID: 8522038025685342317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_39
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 13
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d9fc406847aed9e0800000000000000
+      internalID: -1594653288747435559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_40
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 13
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753e1ec87a5c08d50800000000000000
+      internalID: 6737602365960086359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_41
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 13
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd2845be070922e0800000000000000
+      internalID: -2150179587340358212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_42
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 13
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25d3fb7c19d13010800000000000000
+      internalID: 1166952494827558188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_43
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 13
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9500c69a62f1d80f0800000000000000
+      internalID: -1113199281978998695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_placeholder_bg_44
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 13
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bff3968a00cb0aa0800000000000000
+      internalID: -6193645711077933134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
