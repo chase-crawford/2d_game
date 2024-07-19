@@ -6,7 +6,7 @@ public class animationParameters : MonoBehaviour
 {
     public Animator animator;
     public CharacterController2D controller;
-    public Movement inputs;
+    public MovementInput inputs;
     private Rigidbody2D m_Rigidbody2D;
     public bool grounded = true;
     public bool crounching = false;

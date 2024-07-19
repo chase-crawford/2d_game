@@ -28,13 +28,14 @@ public class CharacterController2D : MonoBehaviour
 	}
 
 
-	private void FixedUpdate()
+	public void FixedUpdate()
 	{
 		
 
 		// The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
 		//layers work as well
 		Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
+
 		for (int i = 0; i < colliders.Length; i++)
 		{
 			if (colliders[i].gameObject != gameObject)
@@ -63,7 +64,7 @@ public class CharacterController2D : MonoBehaviour
 			if (crouch)
 			{
 				// Reduce the speed by the crouchSpeed multiplier
-				move *= 0;
+				move *= m_CrouchSpeed;
 
 				// Disable one of the colliders when crouching
 				if (m_CrouchDisableCollider != null)
@@ -114,7 +115,7 @@ public class CharacterController2D : MonoBehaviour
 		transform.localScale = theScale;
 	}
 
-	    void OnTriggerExit2D(Collider2D m_WhatIsGround)
+	void OnTriggerExit2D(Collider2D m_WhatIsGround)
     {
         m_Grounded = false;
     }
