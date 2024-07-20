@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a16b9f7c8676c7842ae3a6fc8ff386aa
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - flask: {fileID: 6631348651526623426, guid: 98a0dd8784210a64fbca1abf5788c357, type: 3}
+  - directionFaced: {instanceID: 0}
+  - throwOrigion: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
