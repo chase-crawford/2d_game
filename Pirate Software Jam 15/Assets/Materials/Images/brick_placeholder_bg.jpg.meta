@@ -138,7 +138,7 @@ TextureImporter:
       213: -6193645711077933134
     second: brick_placeholder_bg_44
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -155,10 +155,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -197,6 +199,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -208,6 +212,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -220,6 +225,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1180,9 +1186,54 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      brick_placeholder_bg_0: -146684941313191259
+      brick_placeholder_bg_1: 8289958027846055750
+      brick_placeholder_bg_10: 1966395614975173107
+      brick_placeholder_bg_11: 1000442807053288568
+      brick_placeholder_bg_12: -4996246154554569599
+      brick_placeholder_bg_13: -7705990522316191285
+      brick_placeholder_bg_14: -4555875524317828161
+      brick_placeholder_bg_15: 6378013816689742649
+      brick_placeholder_bg_16: -6667858704485947283
+      brick_placeholder_bg_17: 5287685367542903454
+      brick_placeholder_bg_18: -1137735546252589779
+      brick_placeholder_bg_19: -5602379031010712334
+      brick_placeholder_bg_2: -4495612053706138844
+      brick_placeholder_bg_20: 349385223729925444
+      brick_placeholder_bg_21: 8488268748735599606
+      brick_placeholder_bg_22: 5206247133273162559
+      brick_placeholder_bg_23: -4454753418911647678
+      brick_placeholder_bg_24: 185699808066608194
+      brick_placeholder_bg_25: -4162428826757736239
+      brick_placeholder_bg_26: -8444613908993049746
+      brick_placeholder_bg_27: -4753253968603788284
+      brick_placeholder_bg_28: -8787773473960948888
+      brick_placeholder_bg_29: -3288120219349792234
+      brick_placeholder_bg_3: 667868321196998378
+      brick_placeholder_bg_30: -8518532024227344655
+      brick_placeholder_bg_31: -1350324763414966188
+      brick_placeholder_bg_32: -1467743669540569202
+      brick_placeholder_bg_33: -1499486684034997918
+      brick_placeholder_bg_34: -3701965460519819982
+      brick_placeholder_bg_35: -8229246726056837192
+      brick_placeholder_bg_36: 8572669519331050004
+      brick_placeholder_bg_37: -7640436466228702542
+      brick_placeholder_bg_38: 8522038025685342317
+      brick_placeholder_bg_39: -1594653288747435559
+      brick_placeholder_bg_4: -2001348668821825115
+      brick_placeholder_bg_40: 6737602365960086359
+      brick_placeholder_bg_41: -2150179587340358212
+      brick_placeholder_bg_42: 1166952494827558188
+      brick_placeholder_bg_43: -1113199281978998695
+      brick_placeholder_bg_44: -6193645711077933134
+      brick_placeholder_bg_5: 4012907870672291599
+      brick_placeholder_bg_6: 4722398075475020918
+      brick_placeholder_bg_7: -3281654451100777215
+      brick_placeholder_bg_8: 2409020188116527038
+      brick_placeholder_bg_9: 1072967619086168132
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
