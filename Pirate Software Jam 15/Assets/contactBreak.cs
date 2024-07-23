@@ -6,8 +6,10 @@ public class contactBreak : MonoBehaviour
 {
 
     public LayerMask m_WhatIsGround;
+    public GameObject AOE;
     private BoxCollider2D flask;
-    public float radius = 1;
+    public float aoeHeight = 1;
+    public float aoeWidth = 1;
 
     // Update is called once per frame
     void Update()
@@ -23,9 +25,18 @@ public class contactBreak : MonoBehaviour
 		}*/
     }
 
-    void OnCollisionEnter2D(Collision2D flask)
+    void OnCollisionEnter2D(Collision2D other)
     {
-        if (flask.gameObject.tag == "Ground")
+        if (other.gameObject.tag == "Ground")
+        {
+            GameObject aoe = Instantiate(AOE, transform.position, Quaternion.identity);
+            Vector3 aoeScale = aoe.transform.localScale;
+            aoeScale.x = aoeWidth;
+            aoeScale.y = aoeHeight;
+            aoe.transform.localScale = aoeScale;
             Destroy (gameObject);
+        }
+        
+        
     }
 }

@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1034233173617574862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6725551474588167445}
+  m_Layer: 7
+  m_Name: ProjectileThrow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6725551474588167445
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034233173617574862}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4042058793035273156}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5091674842189658290
 GameObject:
   m_ObjectHideFlags: 0
@@ -14,7 +45,10 @@ GameObject:
   - component: {fileID: 4093409407322024316}
   - component: {fileID: 1311842662140763775}
   - component: {fileID: 3145979268456791929}
-  m_Layer: 0
+  - component: {fileID: 259605526879486304}
+  - component: {fileID: 2743390919643220815}
+  - component: {fileID: 3749285746608287431}
+  m_Layer: 7
   m_Name: Character
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -33,7 +67,8 @@ Transform:
   m_LocalPosition: {x: -8.3, y: -3.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6725551474588167445}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8404627981911203536
@@ -226,3 +261,60 @@ MonoBehaviour:
   jumpForce: 400
   maxJumps: 1
   statuses: []
+--- !u!114 &259605526879486304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5091674842189658290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a16b9f7c8676c7842ae3a6fc8ff386aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flask: {fileID: 6631348651526623426, guid: 98a0dd8784210a64fbca1abf5788c357, type: 3}
+  throwForce: 400
+  upwardPush: 200
+  throwOrigion: {fileID: 6725551474588167445}
+  bagSize: 10
+  flasksThrownOnClick: 1
+  allowButtonHold: 0
+  recollecting: 0
+  spread: 0
+  recollectingTime: 0
+  timeBetweenThrows: 0
+  allowthrow: 1
+--- !u!114 &2743390919643220815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5091674842189658290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520abc04d953e9d4aa77d734933fc759, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  health: 0
+--- !u!114 &3749285746608287431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5091674842189658290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600ae9ce3e496714ea173ca12e278fc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageableTags: []
+  damageType: 0
+  delayInterval: 0
+  uptime: 0
+  swingDelay: 0
+  impactVector: {x: 0, y: 0}

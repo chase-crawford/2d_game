@@ -22,6 +22,8 @@ public class PlayerMovementComponent : MonoBehaviour
     void Awake() {
         // get rb component
             rb = GetComponent<Rigidbody2D>(); 
+
+            jumps = maxJumps;
     }
 
     // Update is called once per frame
@@ -120,7 +122,7 @@ public class PlayerMovementComponent : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Wall"))
         {
-            Debug.Log(collision.transform.position);
+            //Debug.Log(collision.transform.position);
             Debug.DrawLine(collision.transform.position, transform.position, Color.red, 3f);
             jumps = maxJumps;
             statuses.Remove("in_air");

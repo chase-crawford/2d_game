@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: -3535003768841395705}
   - component: {fileID: 414610007264842841}
   - component: {fileID: -5153610864222763373}
-  m_Layer: 6
+  - component: {fileID: 8022220218921350764}
+  m_Layer: 7
   m_Name: Flask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +105,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 3e55ab74a0cd2cc44ab2baf2e4a91cc9, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -165,7 +166,9 @@ MonoBehaviour:
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 64
-  radius: 1
+  AOE: {fileID: 4235134680755122918, guid: aca448ffd87e6a44ea0fde4b4838215a, type: 3}
+  aoeHeight: 2
+  aoeWidth: 4
 --- !u!61 &-5153610864222763373
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -211,3 +214,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8022220218921350764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6631348651526623426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600ae9ce3e496714ea173ca12e278fc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageableTags: []
+  damageType: 0
+  delayInterval: 0
+  uptime: 0
+  swingDelay: 0
+  impactVector: {x: 0, y: 0}

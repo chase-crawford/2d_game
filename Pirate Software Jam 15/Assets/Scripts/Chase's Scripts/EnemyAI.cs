@@ -71,7 +71,7 @@ public class EnemyAI : MonoBehaviour
                 {
                     if (distance.y > 1 && jumps > 0)
                     {
-                        Debug.Log("Trying to Jump");
+                        //Debug.Log("Trying to Jump");
                         rb.AddForce(new Vector2(0, jumpForce));
                         jumps--;
                         statuses.Add("in_air");
@@ -128,7 +128,7 @@ public class EnemyAI : MonoBehaviour
             //Debug.Log("Touched something", other.gameObject);
                 if (other.CompareTag("Ground"))
                 {
-                    Debug.Log("Touched Ground");
+                    //Debug.Log("Touched Ground");
                     jumps = maxJumps;
                     statuses.Remove("in_air");
                 }
