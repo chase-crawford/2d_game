@@ -21,6 +21,9 @@ public class EnemyAI : MonoBehaviour
     private int jumps = 0;
     public List<string> statuses = new List<string>();
 
+    public AudioClip[] jumpSFX;
+    public AudioClip alertSFX;
+
 
     void Awake()
     {
@@ -45,6 +48,9 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.instance.inMenu)
+            return;
+
         if (aggroTime > 0)
         {
             aggroTime -= Time.deltaTime;
@@ -62,15 +68,18 @@ public class EnemyAI : MonoBehaviour
 
                     // update looking direction
                         Vector3 scale = transform.localScale;
-                        scale.x = rb.velocity.x > 0 ? 1 : rb.velocity.x < 0 ? -1 : scale.x;
+                        scale.x = rb.velocity.x > 0 ? Mathf.Abs(scale.x) : rb.velocity.x < 0 ? -Mathf.Abs(scale.x) : scale.x;
                         transform.localScale = scale;
                 }
 
             // jump
                 if (canJump)
                 {
-                    if (distance.y > 1 && jumps > 0)
+                    if (distance.y > 1 && jumps > 0 && distance.x < 2)
                     {
+                        // play jump sfx
+                        SoundFXManager.instance.PlayRandomSoundClip(jumpSFX, transform, .5f);
+
                         //Debug.Log("Trying to Jump");
                         rb.AddForce(new Vector2(0, jumpForce));
                         jumps--;
@@ -110,12 +119,16 @@ public class EnemyAI : MonoBehaviour
                 Vector3 direction = transform.position - other.gameObject.transform.position;
                     if (!(Physics2D.Linecast((Vector2)transform.position, (Vector2)other.gameObject.transform.position, LayerMask.GetMask("Ground"))) && direction.x / transform.localScale.x < 0 && direction.magnitude <= detectionRadius)
                     {
+
                         Debug.DrawLine(transform.position, other.gameObject.transform.position, Color.white, 3f);
                         player = other.gameObject;
                         aggroTime = aggroTimer;
 
                         if (statuses.Contains("Patroling"))
                         {
+                            // play alert sfx the first time. Dear god it was an awful sound if I didnt do it that way. Might have gotten tinitus from that. - C
+                            SoundFXManager.instance.PlaySoundClip(alertSFX, transform, .75f);
+
                             statuses.Remove("Patroling");
                             statuses.Add("Aggroing");
                         }

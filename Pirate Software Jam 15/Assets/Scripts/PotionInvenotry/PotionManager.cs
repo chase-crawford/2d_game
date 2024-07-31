@@ -110,8 +110,13 @@ public class PotionManager : MonoBehaviour
 
         // get sprites for images
         currentPotion.GetComponent<Image>().sprite = potionsList[potionIndex].Brew.GetComponent<SpriteRenderer>().sprite;
+        currentPotion.GetComponent<Animator>().runtimeAnimatorController = potionsList[potionIndex].animator;
+
         previousPotion.GetComponent<Image>().sprite = potionsList[previousIndex].Brew.GetComponent<SpriteRenderer>().sprite;
+        previousPotion.GetComponent<Animator>().runtimeAnimatorController = potionsList[previousIndex].animator;
+
         nextPotion.GetComponent<Image>().sprite = potionsList[nextIndex].Brew.GetComponent<SpriteRenderer>().sprite;
+        nextPotion.GetComponent<Animator>().runtimeAnimatorController = potionsList[nextIndex].animator;
 
         // Gray out non-current options
         previousPotion.GetComponent<Image>().color = nextPotion.GetComponent<Image>().color = Grayout;

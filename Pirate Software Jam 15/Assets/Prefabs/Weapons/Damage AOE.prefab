@@ -54,6 +54,7 @@ MonoBehaviour:
   damageType: 2
   delayInterval: 0.5
   uptime: 10
+  dotParticles: {fileID: 3701312059484504580, guid: ff6e8d62c6048d044a927faf7227418d, type: 3}
   swingDelay: 0
   impactVector: {x: 0, y: 0}
 --- !u!61 &-2185239897751684928
@@ -127,7 +128,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &6406833491281321331
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -52,20 +52,23 @@ public class LobProjectile : MonoBehaviour
 
   void Update()
   {
+    if (GameManager.instance.inMenu)
+      return;
+
     int beforeIndex = potionManager.potionIndex;
 
-    if(Input.GetAxis("Mouse ScrollWheel") > 0f)
-    {
-      potionManager.potionIndex = ((potionManager.potionIndex+1)%(potionManager.potionsList.Length+1));
-    }
     if(Input.GetAxis("Mouse ScrollWheel") < 0f)
     {
-      potionManager.potionIndex = ((potionManager.potionIndex-1)%(potionManager.potionsList.Length+1));
+      potionManager.potionIndex = ((potionManager.potionIndex+1)%(potionManager.potionsList.Length));
     }
-    if(potionManager.potionIndex < 0)
+    if(Input.GetAxis("Mouse ScrollWheel") > 0f)
     {
-      potionManager.potionIndex = 1;
+      potionManager.potionIndex -= 1;
+
+      if (potionManager.potionIndex < 0)
+        potionManager.potionIndex = potionManager.potionsList.Length - 1;
     }
+
 
     if (beforeIndex != potionManager.potionIndex)
     {

@@ -5,6 +5,7 @@ using UnityEngine;
 public class HerbPickup : MonoBehaviour
 {
     public Herb herbType;
+    public AudioClip pickupSfx;
 
     void Start()
     {
@@ -24,6 +25,9 @@ public class HerbPickup : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+
+            SoundFXManager.instance.PlaySoundClip(pickupSfx, transform, 1f);
+
             Destroy(gameObject);
 
             // get object's movement

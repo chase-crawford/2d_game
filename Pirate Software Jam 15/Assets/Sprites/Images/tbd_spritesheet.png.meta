@@ -1,0 +1,800 @@
+fileFormatVersion: 2
+guid: f64c32ce01cbdd446959145e4ed5950f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: flask_1_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65c85201c1ffc142b15917833fa48ae
+      internalID: 1414335969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 416
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a521320c5d5afbc4c90fd498d6be307b
+      internalID: -1268880330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 416
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56e30231f886324cb35e5f564d7ffe8
+      internalID: -1752802332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 416
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf9ca2843601fe44bb8cc90bab25a1b2
+      internalID: -1866110703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 416
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f13b7b892d7274da1620e360a93876
+      internalID: 77232196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 416
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 857e929306395fa4f87903934f86b6f3
+      internalID: -1149420225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 416
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f4b17362f71ec43941fc938fe1a5d3
+      internalID: 1649633911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 312
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7ab915e7fe0454c936906461ef1d3c
+      internalID: -1158851893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 312
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658264b102409f546be10bff78c20f3b
+      internalID: 730471447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 312
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4696d9eae09fbfe4fb08b10befcd59a6
+      internalID: 614970487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 312
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbcc61b938c632e4b8cac19974e2e0af
+      internalID: -422181054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 312
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c7222d81588994c91d6dfe5163fd41
+      internalID: -417344380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 312
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 344034452abf5084a8c92a1c4e24ab23
+      internalID: 1350238315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 312
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512791d10dd6eae439415927499d0714
+      internalID: 1566185810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 208
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c4f3105c7a9b4040917ed59dbff7ec8
+      internalID: -16513115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 208
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da1afd70ffeba845a272d67041ebebd
+      internalID: -1379240023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 208
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c59e8ee4f315e34f86a036debc8b7dc
+      internalID: -2088875036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 208
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f13568f82a47044fa427e9d1e5469b0
+      internalID: 1265537462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 208
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264f0fe2fc7fcb845a9a1fdbbc9f95f4
+      internalID: -1058670257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 208
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607b807f7f6f5e648b8c29208204dcd8
+      internalID: 773529617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 208
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645e4c314d3f85447a95166018e2c0bd
+      internalID: 1370748080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 104
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50feb279e122a114e83b848b1999bd0e
+      internalID: 1301103528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 104
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4561d32af37c8d4090d0c72bd520f9b
+      internalID: 1605122163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 104
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af87d053cc33304498ade5508cec565
+      internalID: -1838998974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 104
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecce0bdb52b314942a9bf0f66aba0d10
+      internalID: -300077513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 104
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d267a1154bc3e14cbb40683d4eece4c
+      internalID: -2108359120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 104
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea74156625075a4ebdaef185c6eb0e0
+      internalID: 1868376700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 104
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc6b3be0fe93a446ab0442f4a42e6a3
+      internalID: 962262597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed1200d4511b2d4db0811c92428ef81
+      internalID: 1089788827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 0
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d4489af1f52c54a9d9372b1706914c
+      internalID: 260343137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask_1_spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c756cafbd5517ea488f20fc5da138b04
+      internalID: -1293789444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      flask_1_spritesheet_0: 1414335969
+      flask_1_spritesheet_1: -1268880330
+      flask_1_spritesheet_10: -422181054
+      flask_1_spritesheet_11: -417344380
+      flask_1_spritesheet_12: 1350238315
+      flask_1_spritesheet_13: 1566185810
+      flask_1_spritesheet_14: -16513115
+      flask_1_spritesheet_15: -1379240023
+      flask_1_spritesheet_16: -2088875036
+      flask_1_spritesheet_17: 1265537462
+      flask_1_spritesheet_18: -1058670257
+      flask_1_spritesheet_19: 773529617
+      flask_1_spritesheet_2: -1752802332
+      flask_1_spritesheet_20: 1370748080
+      flask_1_spritesheet_21: 1301103528
+      flask_1_spritesheet_22: 1605122163
+      flask_1_spritesheet_23: -1838998974
+      flask_1_spritesheet_24: -300077513
+      flask_1_spritesheet_25: -2108359120
+      flask_1_spritesheet_26: 1868376700
+      flask_1_spritesheet_27: 962262597
+      flask_1_spritesheet_28: 1089788827
+      flask_1_spritesheet_29: 260343137
+      flask_1_spritesheet_3: -1866110703
+      flask_1_spritesheet_30: -1293789444
+      flask_1_spritesheet_31: 1982435204
+      flask_1_spritesheet_32: 1546753984
+      flask_1_spritesheet_33: -1035732991
+      flask_1_spritesheet_34: 1961284538
+      flask_1_spritesheet_4: 77232196
+      flask_1_spritesheet_5: -1149420225
+      flask_1_spritesheet_6: 1649633911
+      flask_1_spritesheet_7: -1158851893
+      flask_1_spritesheet_8: 730471447
+      flask_1_spritesheet_9: 614970487
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

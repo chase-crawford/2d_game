@@ -1,8 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+#if UNITY_EDITOR
 using UnityEditor.UIElements;
 using UnityEditor;
+#endif
 using UnityEngine;
+using System;
 
 public class DamageComponent : MonoBehaviour
 {
@@ -16,6 +19,7 @@ public class DamageComponent : MonoBehaviour
     [SerializeField] public float delayInterval;
     [SerializeField] public float uptime = 5f;
     private float delay = 0f, life;
+    [SerializeField] public ParticleSystem dotParticles;
 
     // Single
     [SerializeField] public float swingDelay;
@@ -27,6 +31,8 @@ public class DamageComponent : MonoBehaviour
     public delegate void OnKill();
     public event OnKill onKill;
 
+    private Vector2 dir;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,10 +40,27 @@ public class DamageComponent : MonoBehaviour
 
         if (uptime > 0)
             life = uptime;
+
+        dir = Vector2.zero;
+
+        if (damageType is DamageType.DOT)
+        {
+            ParticleSystem particles = Instantiate(dotParticles, transform.position, Quaternion.identity);
+            particles.transform.parent = transform;
+            particles.transform.localScale = new Vector3(1,1,1);
+
+            var particleMain = particles.main;
+            particleMain.duration = uptime;
+
+            particles.Play();
+        }
     }
 
     void Update()
     {
+        if (GameManager.instance.inMenu)
+            return;
+
         if (delay > 0)
             delay -= Time.deltaTime;
 
@@ -48,31 +71,32 @@ public class DamageComponent : MonoBehaviour
             if (life <= 0)
                 Destroy(gameObject);
         }
+
+        dir.x = transform.localScale.x;
     }
 
     void OnCollisionEnter2D(Collision2D collision){
-        foreach (string tag in damageableTags){
-            // if object is attackable -> get health component and damage it
-            if(collision.gameObject.tag == tag){
-                if (damageType is DamageType.Thorns) DamageEntity(collision.collider);
-
-                else if (damageType is DamageType.Single) DamageEntity(collision.collider);
-            }
+        if (isDamageable(damageableTags, collision.gameObject.tag))
+        {
+            if (damageType is DamageType.Thorns) DamageEntity(collision.collider);
         }
     }
 
     void OnTriggerStay2D(Collider2D other)
     {
-        foreach (string tag in damageableTags){
-            // if object is attackable -> get health component and damage it
-            if(other.gameObject.tag == tag){
-                if (delay <= 0 && damageType is DamageType.DOT && !other.isTrigger)
-                {
-                    DamageEntity(other);
-                    delay = delayInterval;
-                }
+        if (isDamageable(damageableTags, other.gameObject.tag))
+        {
+            if (delay <= 0 && damageType is DamageType.DOT && !other.isTrigger)
+            {
+                DamageEntity(other);
+                delay = delayInterval;
             }
         }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (damageType is DamageType.Single && !other.isTrigger && isDamageable(damageableTags, other.gameObject.tag)) DamageEntity(other.GetComponent<Collider2D>());
     }
 
     void DamageEntity(Collider2D entity)
@@ -84,7 +108,7 @@ public class DamageComponent : MonoBehaviour
         if (hpComp != null)
         {
             hpComp.onDeath += KilledEnemy;
-            entity.gameObject.GetComponent<HealthComponent>().TakeDamage(damage);
+            entity.gameObject.GetComponent<HealthComponent>().TakeDamage(damage, new Vector2(transform.lossyScale.x, 0));
             hpComp.onDeath -= KilledEnemy;
         }
     }
@@ -103,6 +127,18 @@ public class DamageComponent : MonoBehaviour
             Gizmos.DrawCube(transform.position, transform.localScale);
         }
     }
+
+    bool isDamageable (string[] damageableTags, string tag)
+    {
+        foreach (string listTag in damageableTags){
+            // if object is attackable -> get health component and damage it
+            if(tag == listTag){
+                return true;
+            }
+        }
+
+        return false;
+    }
 }
 
 
@@ -111,7 +147,7 @@ public class DamageComponent : MonoBehaviour
 
 
 
-
+#if UNITY_EDITOR // =>
 /* This is a custom Editor. Instead of using the inspector's default GUI, we can make our own.
     I did this so that I can use the enum to show/hide values & make a modular damage component we
     can slap on anything -C */
@@ -143,6 +179,7 @@ public class DamageComponentEditor : Editor
             dc.delayInterval = EditorGUILayout.FloatField("Tick Delay", dc.delayInterval);
             dc.uptime = EditorGUILayout.FloatField("AOE Uptime", dc.uptime);
             dc.damage = EditorGUILayout.IntField("Damage Per Tick", dc.damage);
+            dc.dotParticles = (ParticleSystem)EditorGUILayout.ObjectField("DOT Particles", dc.dotParticles, typeof(ParticleSystem));
         }
 
         // Slashes/single swings
@@ -164,6 +201,9 @@ public class DamageComponentEditor : Editor
         {
             dc.damage = EditorGUILayout.IntField("Damage", dc.damage);
         }
+
+        if (GUI.changed)
+            EditorUtility.SetDirty(target);
     }
 
     /* Don't worry about all this code down here, I copied it off the web.
@@ -210,3 +250,4 @@ public class DamageComponentEditor : Editor
         return newArray;
     }
 }
+#endif
