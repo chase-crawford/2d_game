@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CraftingComponent : MonoBehaviour
 {
-    private GameObject[] recipes;
+    private List<GameObject> recipes;
     private int recipeNum = 0;
 
     private GameObject canvas;
@@ -25,7 +25,7 @@ public class CraftingComponent : MonoBehaviour
         potionManager = GameObject.Find("Potion Manager").GetComponent<PotionManager>();
 
         recipes = craftManager.recipes;
-        UpdateRecipe();
+        //UpdateRecipe();
     }
 
     void Update()
@@ -36,7 +36,7 @@ public class CraftingComponent : MonoBehaviour
             {
                 recipeNum += 1;
 
-                if (recipeNum >= recipes.Length) recipeNum = 0;
+                if (recipeNum >= recipes.Count) recipeNum = 0;
 
                 UpdateRecipe();
             }
@@ -45,7 +45,7 @@ public class CraftingComponent : MonoBehaviour
             {
                 recipeNum -= 1;
 
-                if (recipeNum < 0) recipeNum = recipes.Length-1;
+                if (recipeNum < 0) recipeNum = recipes.Count-1;
 
                 UpdateRecipe();
             }
@@ -94,6 +94,7 @@ public class CraftingComponent : MonoBehaviour
         {
             canvas.SetActive(true);
             canCraft = true;
+            UpdateRecipe();
         }
     }
 
@@ -113,6 +114,7 @@ public class CraftingComponent : MonoBehaviour
         if (previous != null)
             Destroy(previous.gameObject);
 
-        Instantiate(recipes[recipeNum], transform.GetChild(0));
+        if (recipeNum < recipes.Count)
+            Instantiate(recipes[recipeNum], transform.GetChild(0));
     }
 }

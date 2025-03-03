@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: tbdFlask
+  m_Controller: {fileID: 9100000, guid: 07986b2f4bd39084db04467ace27b6c5, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 26b0f470000bd114eb6e5faf7cb769b0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4bfab1cbee2815a428e61d109ec0304f, type: 2}

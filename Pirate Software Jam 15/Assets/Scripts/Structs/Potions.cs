@@ -10,4 +10,6 @@ public struct Potions
     public string Batch;
     public GameObject Brew;
     public int amountHeld;
+    public RuntimeAnimatorController animator;
+    public PotionType potionType;
 }

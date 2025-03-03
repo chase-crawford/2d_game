@@ -1,7 +1,8 @@
 public enum Herb
 {
-    A,
-    B,
-    C,
-    D
+    Red,
+    Green,
+    Blue,
+    Purple,
+    Light
 }

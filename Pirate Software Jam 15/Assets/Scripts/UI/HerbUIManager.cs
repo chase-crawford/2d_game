@@ -56,7 +56,7 @@ public class HerbUIManager : MonoBehaviour
             int newValue = (int)manager.herbs[i].inventoryNum;
             textComp.text = newValue.ToString();
 
-            if (newValue > 0)
+            if (newValue > 0 || herbUI.activeSelf)
             {
                 herbUI.SetActive(true);
 

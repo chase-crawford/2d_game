@@ -20,7 +20,7 @@ public class HealthPickupComponent : MonoBehaviour
 
                 if (hpComp != null)
                 {
-                    hpComp.TakeDamage(-healthChange);
+                    hpComp.Heal(healthChange);
                     Destroy(gameObject);
                 }
             }

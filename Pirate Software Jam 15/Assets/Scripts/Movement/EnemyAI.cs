@@ -4,134 +4,134 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    public int detectionRadius = 3;
-    public float aggroTimer = 10f;
-    public float speed = 3f;
-    public float jumpForce = 400f;
-    public int maxJumps = 1;
-    public Color gizmoColor = Color.white;
+    [Header("Detection")]
+    [SerializeField] private CustomTrigger detectionTrigger;
+    [SerializeField] private int detectionRadius = 3;
+    [SerializeField] private float aggroTimer = 10f;
+    [SerializeField] private Color gizmoColor = Color.white;
+    private float aggroTime = 0f;
 
-    public bool canJump = true;
-    public bool canWalk = true;
-    public bool canFly = true;
+    [Header("Behaviour")]
+    [SerializeField] private bool canJump = true;
+    [SerializeField] private bool canStrafe = true;
+    [SerializeField] private bool canFly = true;
+
+    [Header("Audio")]
+    [SerializeField] private AudioClip alertSFX;
+
 
     private GameObject player = null;
-    private float aggroTime = 0f;
     private Rigidbody2D rb;
-    private int jumps = 0;
-    public List<string> statuses = new List<string>();
-
+    private MovementComponent move;
 
     void Awake()
     {
-        statuses.Add("Patroling");
+        // update detection functionality & radius
+            detectionTrigger.StayTrigger += CheckForPlayer;
+            detectionTrigger.GetComponent<CircleCollider2D>().radius = detectionRadius;
 
         // get rigidbody for movement
             rb = GetComponent<Rigidbody2D>();
+            move = GetComponent<MovementComponent>();
 
         // set detection radius to public var input
             CircleCollider2D detection = GetComponent<CircleCollider2D>();
             detection.radius = detectionRadius;
 
         // if flying -> cut off gravity
+        // also, give drag to stop flyer from flying after lose aggro
             if (canFly)
             {
                 rb.gravityScale = 0;
                 rb.drag = .5f;
-                statuses.Add("flying");
+                move.AddStatus("flying");
             }
+
+        move.AddStatus("Patroling");
     }
 
     // Update is called once per frame
     void Update()
     {
+        // pause game if in menu
+        if (GameManager.instance.inMenu)
+            return;
+
+        // if still aggroed to player -> move
         if (aggroTime > 0)
         {
             aggroTime -= Time.deltaTime;
 
             // get direction between player and enemy
-            Vector2 distance = player.transform.position - transform.position;
+                Vector2 distance = player.transform.position - transform.position;
+                //Debug.DrawLine(transform.position, transform.position + (Vector3)distance.normalized, Color.red, 1f);
 
-            // move horizontally
-                if ((canWalk || canFly) && !statuses.Contains("in_air"))
+            // strafe AI
+                if (canStrafe)
                 {
-                    //Debug.Log("Trying to Move");
-                    Vector2 horizontalForce = new Vector2(distance.x, 0).normalized * speed;
-                    horizontalForce.x -= rb.velocity.x;
-                    rb.AddForce(horizontalForce);
+                    move.Strafe(distance.normalized.x);
 
                     // update looking direction
                         Vector3 scale = transform.localScale;
-                        scale.x = rb.velocity.x > 0 ? 1 : rb.velocity.x < 0 ? -1 : scale.x;
+                        scale.x = rb.velocity.x > 0 ? Mathf.Abs(scale.x) : rb.velocity.x < 0 ? -Mathf.Abs(scale.x) : scale.x;
                         transform.localScale = scale;
                 }
 
-            // jump
+            // jump AI
                 if (canJump)
                 {
-                    if (distance.y > 1 && jumps > 0)
+                    if (distance.y > 1 && distance.x < 2)
                     {
-                        //Debug.Log("Trying to Jump");
-                        rb.AddForce(new Vector2(0, jumpForce));
-                        jumps--;
-                        statuses.Add("in_air");
+                        move.Jump();
                     }
                 }
 
 
-            // flying
+            // flying AI
                 if (canFly)
                 {
-                    //Debug.Log("Trying to Fly");
-                    Vector2 verticalForce = new Vector2(0, distance.y).normalized * speed/16;
-                    verticalForce.x -= rb.velocity.y;
-                    rb.AddForce(verticalForce);
+                    // fly toward player
+                        move.Fly(distance);
                 }
         }
+        // if lost player -> go pack to patrolling
         else
         {
             player = null;
 
-            if (statuses.Contains("Aggroing"))
+            if (move.HasStatus("Aggroing"))
             {
-                statuses.Remove("Aggroing");
-                statuses.Add("Patroling");
+                move.RemoveStatus("Aggroing");
+                move.AddStatus("Patroling");
             }
         }
     }
 
 
-    // When enemy enters detection path, check for aggro
-        void OnTriggerStay2D(Collider2D other)
+    // When enemy enters detection path -> check for aggro
+        void CheckForPlayer(Collider2D other)
         {
             if (other.gameObject.CompareTag("Player"))
             {
                 // if no objects between player and enemy && enemy facing player -> aggro
-                Vector3 direction = transform.position - other.gameObject.transform.position;
+                    Vector3 direction = transform.position - other.gameObject.transform.position;
+
                     if (!(Physics2D.Linecast((Vector2)transform.position, (Vector2)other.gameObject.transform.position, LayerMask.GetMask("Ground"))) && direction.x / transform.localScale.x < 0 && direction.magnitude <= detectionRadius)
                     {
                         Debug.DrawLine(transform.position, other.gameObject.transform.position, Color.white, 3f);
                         player = other.gameObject;
                         aggroTime = aggroTimer;
 
-                        if (statuses.Contains("Patroling"))
+                        if (move.HasStatus("Patroling"))
                         {
-                            statuses.Remove("Patroling");
-                            statuses.Add("Aggroing");
+                            // play alert sfx the first time. Dear god it was an awful sound if I didnt do it that way. Might have gotten tinitus from that. - C
+                            SoundFXManager.instance.PlaySoundClip(alertSFX, transform, 1);
+
+                            move.RemoveStatus("Patroling");
+                            move.AddStatus("Aggroing");
                         }
                     }
             }
-        }
-
-        void OnTriggerEnter2D(Collider2D other)
-        {
-            //Debug.Log("Touched something", other.gameObject);
-                if (other.CompareTag("Ground"))
-                {
-                    //Debug.Log("Touched Ground");
-                    jumps = maxJumps;
-                    statuses.Remove("in_air");
-                }
         }
 
         void OnDrawGizmos()
@@ -140,3 +140,20 @@ public class EnemyAI : MonoBehaviour
             Gizmos.DrawSphere(transform.position, detectionRadius);
         }
 }
+
+// Refactored Code Dump
+        /*void OnTriggerStay2D(Collider2D other)
+        {
+            
+        }*/
+
+        /*void OnTriggerEnter2D(Collider2D other)
+        {
+            //Debug.Log("Touched something", other.gameObject);
+                if (other.CompareTag("Ground"))
+                {
+                    //Debug.Log("Touched Ground");
+                    jumps = maxJumps;
+                    move.RemoveStatus("in_air");
+                }
+        }*/

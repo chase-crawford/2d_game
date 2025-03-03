@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class PotionRecipe : Recipe
 {
+    public PotionType potionType;
 
     public override void AddToInventory()
     {
@@ -13,10 +14,10 @@ public class PotionRecipe : Recipe
         for (int i=0; i<potionManager.potionsList.Length; i++)
         {
             // get crafting item's and potion in potion list's sprites
-            Sprite potionListSprite = potionManager.potionsList[i].Brew.GetComponent<SpriteRenderer>().sprite;
-            Sprite recipeSprite = imageSprite;
+            PotionType potionListType = potionManager.potionsList[i].potionType;
+            PotionType recipeType = potionType;
 
-            if (potionListSprite == recipeSprite)
+            if (potionListType == recipeType)
             {
                 potionManager.potionsList[i].amountHeld++;
                 potionManager.UpdateUISprites();

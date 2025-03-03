@@ -4,5 +4,12 @@ using UnityEngine;
 
 public class CraftingManager : MonoBehaviour
 {
-    public GameObject[] recipes;
+    public static CraftingManager instance;
+
+    public List<GameObject> recipes;
+
+    void Awake()
+    {
+        instance = this;
+    }
 }
