@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7672848607889073011}
   - component: {fileID: 8745544788374791314}
   - component: {fileID: 3242082631948947997}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpeedEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectRadius: 4
   effectDuration: 0
+  linger: 3
   AOE: {fileID: 0}
   isAOE: 0
   particles: {fileID: 0}
@@ -63,7 +64,7 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0

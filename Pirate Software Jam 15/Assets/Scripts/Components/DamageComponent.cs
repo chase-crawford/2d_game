@@ -75,7 +75,7 @@ public class DamageComponent : MonoBehaviour
         dir.x = transform.localScale.x;
     }
 
-    void OnCollisionEnter2D(Collision2D collision){
+    /*void OnCollisionEnter2D(Collision2D collision){
         if (isDamageable(damageableTags, collision.gameObject.tag))
         {
             if (damageType is DamageType.Thorns) DamageEntity(collision.collider);
@@ -97,7 +97,7 @@ public class DamageComponent : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if (damageType is DamageType.Single && !other.isTrigger && isDamageable(damageableTags, other.gameObject.tag)) DamageEntity(other.GetComponent<Collider2D>());
-    }
+    }*/
 
     void DamageEntity(Collider2D entity)
     {
@@ -108,7 +108,7 @@ public class DamageComponent : MonoBehaviour
         if (hpComp != null)
         {
             hpComp.onDeath += KilledEnemy;
-            entity.gameObject.GetComponent<HealthComponent>().TakeDamage(damage, new Vector2(transform.lossyScale.x, 0));
+            //entity.gameObject.GetComponent<HealthComponent>().TakeDamage(damage, new Vector2(transform.lossyScale.x, 0));
             hpComp.onDeath -= KilledEnemy;
         }
     }
@@ -128,7 +128,7 @@ public class DamageComponent : MonoBehaviour
         }
     }
 
-    bool isDamageable (string[] damageableTags, string tag)
+    public bool isDamageable (string tag)
     {
         foreach (string listTag in damageableTags){
             // if object is attackable -> get health component and damage it

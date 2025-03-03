@@ -8,6 +8,7 @@ public class Speed : MonoBehaviour
 
     public int effectRadius;
     public int effectDuration;
+    [SerializeField] float linger = 3;
     public GameObject AOE;
 
     public bool isAOE = false;
@@ -40,19 +41,23 @@ public class Speed : MonoBehaviour
         }
     }
 
+    // Hey Chase! It's 1:22 AM Chase. To-Do when you get to this:
+        // When you take damage you still collide with enemies
+        // When you enter haste it doesnt add speed status, mainly because it gets the damage collider.
+
+        // Maybe work with collider priority, new layers, tags, etc? No clue.
+        // I messed with the main colliders a bit too much and it was a headache so you get it now... Have Fun!
+
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (isAOE)
         {
-            if (other.gameObject.tag == "Player")
-            {
-                other.gameObject.GetComponent<PlayerMovementComponent>().statuses.Add("speed");
-            }
+            MovementComponent move = other.gameObject.GetComponent<MovementComponent>();
+            Debug.Log(other.gameObject.name);
 
-            else if (other.gameObject.tag == "Enemy")
-            {
-                other.gameObject.GetComponent<EnemyAI>().statuses.Add("speed");
-            }
+            if (move != null)
+                move.AddStatus("speed");
         }
     }
 
@@ -60,17 +65,35 @@ public class Speed : MonoBehaviour
     {
         if (isAOE)
         {
-            if (other.gameObject.tag == "Player")
-            {
-                other.gameObject.GetComponent<PlayerMovementComponent>().statuses.Remove("speed");
-                other.gameObject.GetComponent<PlayerMovementComponent>().statuses.Add("speed_timed");
-            }
+            MovementComponent move = other.gameObject.GetComponent<MovementComponent>();
 
-            else if (other.gameObject.tag == "Enemy")
+            if (move != null)
             {
-                other.gameObject.GetComponent<EnemyAI>().statuses.Remove("speed");
-                other.gameObject.GetComponent<EnemyAI>().statuses.Add("speed_timed");
+                move.SpeedUp(linger);
             }
         }
     }
 }
+
+// Refactored Code
+    /*if (other.gameObject.tag == "Player")
+    {
+        other.gameObject.GetComponent<PlayerMovementComponent>().statuses.Add("speed");
+    }
+
+    else if (other.gameObject.tag == "Enemy")
+    {
+        other.gameObject.GetComponent<EnemyAI>().statuses.Add("speed");
+    }*/
+
+    /*if (other.gameObject.tag == "Player")
+    {
+        other.gameObject.GetComponent<PlayerMovementComponent>().statuses.Remove("speed");
+        other.gameObject.GetComponent<PlayerMovementComponent>().statuses.Add("speed_timed");
+    }
+
+    else if (other.gameObject.tag == "Enemy")
+    {
+        other.gameObject.GetComponent<EnemyAI>().statuses.Remove("speed");
+        other.gameObject.GetComponent<EnemyAI>().statuses.Add("speed_timed");
+    }*/

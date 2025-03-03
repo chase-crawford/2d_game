@@ -114,6 +114,7 @@ public class CraftingComponent : MonoBehaviour
         if (previous != null)
             Destroy(previous.gameObject);
 
-        Instantiate(recipes[recipeNum], transform.GetChild(0));
+        if (recipeNum < recipes.Count)
+            Instantiate(recipes[recipeNum], transform.GetChild(0));
     }
 }

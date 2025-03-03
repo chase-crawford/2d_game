@@ -7,7 +7,9 @@ public class Explosion : MonoBehaviour
     public int damage;
     public int radius = 1;
     public ParticleSystem explosionParticles;
+    public GameObject explosionObject;
     public AudioClip explosionSFX;
+    public float explosionTime = .1f;
 
     void OnCollisionEnter2D(Collision2D other)
     {
@@ -27,7 +29,7 @@ public class Explosion : MonoBehaviour
         // Play Particle Effect
         Instantiate(explosionParticles, transform.position, Quaternion.identity);
 
-        // get list of enemies in damage radius
+        /*// get list of enemies in damage radius
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, radius);
 
         // Check if explosion hit any enemies
@@ -38,8 +40,18 @@ public class Explosion : MonoBehaviour
             {
                 hit.gameObject.GetComponent<HealthComponent>().TakeDamage(damage, Vector2.right);
             }
-        }
+        }*/
 
         Destroy(gameObject);
+    }
+
+    private IEnumerator ExplosionCollider()
+    {
+        GameObject explo = Instantiate(explosionObject, transform.position, Quaternion.identity);
+        explo.GetComponent<DamageComponent>().damage = this.damage;
+
+        yield return new WaitForSeconds(explosionTime);
+
+        Destroy(explo);
     }
 }
